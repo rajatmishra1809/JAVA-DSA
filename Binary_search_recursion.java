@@ -19,7 +19,7 @@ class Binary_search_recursion {
             return -1;
         }
 
-        int middle = low + (high - low) / 2;
+        int middle = low + (high - low) / 2; //(high+low)/2 also works but sometimes can leadto bugs in bigger arrays
 
         if (key == sortedArray[middle]) {
             return middle;
